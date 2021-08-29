@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS06eBtoxBFcOkE1IDDlUj0_UTX0QLlnv9Og&usqp=CAU');
+    background-size: cover;
+}
+
+/* header  */
+header h1{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.difficulty-container,
+.field-container {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: lightgray;
+    border-radius: 30px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.diff-label {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.diff-label span {
+    color: red;
+    font-size: 30px;
+}
+
+.diff-select {
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-box button {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn-box button:last-child {
+    background-color: red;
+}
+
+.btn-box button:hover {
+    background-color: darkgreen;
+}
+
+.btn-box button:last-child:hover {
+    background-color: rgb(170, 26, 26);
+}
+
+/* campo minato  */
+#campoGioco {
+    width: 50vh;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.square {
+    width: calc(50vh / 10);
+    height: calc(40vh / 10);
+    border-radius: 20px;
+    float: left;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.green {
+    background: darkgreen;
+}
+
+.red {
+    background: red;
+}
+/* fine campo minato  */

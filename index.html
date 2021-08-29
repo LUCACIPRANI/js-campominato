@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Campo Minato </title>
+</head>
+<body>
+    <header>
+        <h1>Campo Minato</h1>
+    </header>
+    <div class="container">
+        <div class="difficulty-container">
+            <div class="box">
+                <label class="diff-label" for="levelChoice">Choose the level</label>
+                <select class="diff-select" name="levelChoice" id="levelChoice">
+                    <option value="easy">Facile</option>
+                    <option value="normal">Normale</option>
+                    <option value="hard">Difficile</option>
+                </select>
+            </div>
+            <div class="btn-box">
+                <button id="start">Start Game</button>
+                <button id="reset">Reset </button>
+            </div>
+        </div>
+        <div id="field-container" class="field-container">
+            <div id="campoGioco" class="clearfix">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
